@@ -5,11 +5,22 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-image: url("/images/background.png");
   background-size: cover;
   background-position: center;
+}
+button {
+  transition: all 0.5s ease;
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.95);
 }
 
 .my-container {
@@ -68,6 +79,10 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 400;
+}
+.header > nav > a {
+  text-decoration: none;
+  color: black;
 }
 .header > div {
   display: flex;
@@ -404,6 +419,7 @@ body {
   font-size: 30px;
 }
 .progress-track > div {
+  gap: 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -523,6 +539,7 @@ body {
   display: none !important;
 }
 /* blog */
+
 .blog {
   margin-top: 200px;
   display: flex;
@@ -542,7 +559,13 @@ body {
   box-shadow: #55555550 0px 8px 24px;
   border-radius: 10px;
   padding-bottom: 20px;
+  transition: all 0.5s ease;
 }
+.blog > div > div:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
 .blog > div > div > h4 {
   margin: 10px 20px;
   font-size: 18px;
@@ -673,6 +696,11 @@ body {
   border-bottom: 2px solid gainsboro;
   border-top: 2px solid gainsboro;
   text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.footer-content h3:hover {
+  cursor: pointer;
+  color: #f56032;
 }
 .footer-content ul {
   margin-top: 40px;
@@ -685,6 +713,11 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: all 0.5s ease;
+}
+.footer-content ul > li:hover {
+  cursor: pointer;
+  color: black;
 }
 .footer-section4 > ul > li {
   margin-bottom: 20px;
