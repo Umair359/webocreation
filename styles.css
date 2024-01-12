@@ -313,6 +313,7 @@ body {
   font-weight: 500;
 }
 .features-slider-element > p {
+  height: 140px;
   text-align: center;
   margin: 20px;
   font-size: 16px;
