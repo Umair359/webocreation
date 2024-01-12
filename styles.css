@@ -344,7 +344,7 @@ button:active {
   font-weight: 500;
 }
 .features-slider-element > p {
-  height: 140px;
+  height: 200px;
   text-align: center;
   margin: 20px;
   font-size: 16px;
@@ -392,6 +392,11 @@ button:active {
   gap: 30px;
   padding: 20px 30px;
   border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.read-more > div:hover {
+  transform: scale(0.95);
+  cursor: pointer;
 }
 .read-more > div > img {
   width: 100%;
@@ -651,16 +656,16 @@ button:active {
 /* get Started */
 
 .get-started-container {
-  background-image: url("/images/getstartedBg.png");
+  background-color: red;
   height: 700px;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 100px;
 }
 .get-started {
-  float: right;
-  margin-top: 12%;
-  margin-left: 58%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .get-started > h1 {
   font-size: 60px;
