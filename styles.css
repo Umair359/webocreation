@@ -80,11 +80,16 @@ button:active {
   text-transform: uppercase;
   font-weight: 400;
 }
+.header > nav > .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .header > nav > a {
   text-decoration: none;
   color: black;
   transition: all 0.5s ease;
 }
+
 .header > nav > a:hover {
   color: #f56032;
 }
@@ -656,8 +661,8 @@ button:active {
 /* get Started */
 
 .get-started-container {
-  background-color: red;
   height: 700px;
+  background-image: url("/images/getstartedBg2.png");
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 100px;
@@ -667,22 +672,39 @@ button:active {
   justify-content: center;
   align-items: center;
 }
-.get-started > h1 {
+.get-started-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transition: all 0.5s ease;
+}
+.get-started-image > img {
+  width: 100%;
+}
+.get-started-image:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.get-started-content {
+  width: 40%;
+}
+.get-started-content > h1 {
   font-size: 60px;
   font-family: "Vidaloka", serif;
   color: white;
   font-weight: 500;
 }
-.get-started > h1 > span {
+.get-started-content > h1 > span {
   color: #f56032;
   font-family: "Vidaloka", serif;
 }
-.get-started > p {
+.get-started-content > p {
   color: white;
   font-size: 22px;
   margin-top: 20px;
 }
-.get-started > button {
+.get-started-content > button {
   padding: 20px 60px;
   margin-top: 40px;
   font-size: 18px;
@@ -692,11 +714,6 @@ button:active {
   border: none;
 }
 
-@media (max-width: 1250px) {
-  .get-started > h1 {
-    font-size: 40px;
-  }
-}
 /* Footer */
 .footer {
   display: flex;
@@ -804,6 +821,14 @@ button:active {
   .footer-section5 > ul > li > div > button {
     width: 70px;
   }
+  .get-started-image {
+    width: 60%;
+    padding-top: 50px;
+  }
+  .get-started-content {
+    width: 40%;
+    padding-top: 50px;
+  }
 }
 @media (max-width: 1250px) {
   .footer-content h3 {
@@ -813,6 +838,14 @@ button:active {
   .footer-content ul {
     margin-right: 30px;
     margin-top: 20px;
+  }
+  .get-started-image {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .get-started-content {
+    width: 50%;
+    padding-top: 50px;
   }
 }
 
